@@ -1,0 +1,7 @@
+# PortBlitz Requirements
+
+# Core (Standard Library only for v1.0 MVP)
+# No external dependencies required for basic execution.
+
+# Optional / Future
+# uvloop; sys_platform != 'win32'  # For v3.0 ultra-speed on Linux/Mac
