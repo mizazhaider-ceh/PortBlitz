@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="580" viewBox="0 0 850 580">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&amp;display=swap');
+      .term-bg { fill: #0d1117; }
+      .title-bar { fill: #161b22; }
+      .dot-red { fill: #ff5f56; }
+      .dot-yellow { fill: #ffbd2e; }
+      .dot-green { fill: #27c93f; }
+      .title-text { fill: #8b949e; font-family: 'JetBrains Mono', 'Cascadia Code', 'Fira Code', monospace; font-size: 12px; }
+      .text { fill: #c9d1d9; font-family: 'JetBrains Mono', 'Cascadia Code', 'Fira Code', monospace; font-size: 13px; }
+      .cyan { fill: #00ffcc; }
+      .green { fill: #3fb950; }
+      .yellow { fill: #d29922; }
+      .magenta { fill: #bc8cff; }
+      .bold { font-weight: 700; }
+      .dim { fill: #484f58; }
+      .white { fill: #f0f6fc; }
+      .blue { fill: #58a6ff; }
+      .red { fill: #ff7b72; }
+      .orange { fill: #ffa657; }
+    </style>
+  </defs>
+
+  <!-- Terminal Window -->
+  <rect class="term-bg" width="850" height="580" rx="10" ry="10"/>
+  <rect class="title-bar" width="850" height="38" rx="10" ry="10"/>
+  <rect class="term-bg" x="0" y="28" width="850" height="12"/>
+
+  <!-- Window Dots -->
+  <circle class="dot-red" cx="20" cy="19" r="6"/>
+  <circle class="dot-yellow" cx="40" cy="19" r="6"/>
+  <circle class="dot-green" cx="60" cy="19" r="6"/>
+  <text class="title-text" x="380" y="23" text-anchor="middle">portblitz.py -i — Interactive Command Center</text>
+
+  <!-- Intro -->
+  <text class="cyan bold" x="30" y="66" xml:space="preserve">    ⚡ PortBlitz v5.0 — Interactive Command Center ⚡</text>
+  <text class="dim" x="30" y="84" xml:space="preserve">    Type 'help' for command reference  ·  'show' to view config  ·  'exit' to quit</text>
+
+  <!-- Set commands -->
+  <text class="cyan bold" x="30" y="116" xml:space="preserve">portblitz ❯ </text>
+  <text class="white" x="170" y="116" xml:space="preserve">set target 10.10.10.5</text>
+  <text class="green" x="30" y="136" xml:space="preserve">  [+] Target → 10.10.10.5  (1 host)</text>
+
+  <text class="cyan bold" x="30" y="162" xml:space="preserve">portblitz ❯ </text>
+  <text class="white" x="170" y="162" xml:space="preserve">set ports 1-1000</text>
+  <text class="green" x="30" y="182" xml:space="preserve">  [+] Ports → 1-1000</text>
+
+  <text class="cyan bold" x="30" y="208" xml:space="preserve">portblitz ❯ </text>
+  <text class="white" x="170" y="208" xml:space="preserve">set vuln on</text>
+  <text class="green" x="30" y="228" xml:space="preserve">  [+] vuln → </text>
+  <text class="green bold" x="145" y="228" xml:space="preserve">ON</text>
+
+  <text class="cyan bold" x="30" y="254" xml:space="preserve">portblitz ❯ </text>
+  <text class="white" x="170" y="254" xml:space="preserve">set scripts on</text>
+  <text class="green" x="30" y="274" xml:space="preserve">  [+] scripts → </text>
+  <text class="green bold" x="175" y="274" xml:space="preserve">ON</text>
+
+  <!-- Show command -->
+  <text class="cyan bold" x="30" y="304" xml:space="preserve">portblitz ❯ </text>
+  <text class="white" x="170" y="304" xml:space="preserve">show</text>
+
+  <!-- Session Config -->
+  <text class="cyan bold" x="30" y="332" xml:space="preserve">  ─── SESSION CONFIGURATION ───</text>
+
+  <text class="white bold" x="30" y="358" xml:space="preserve">  Target     :</text>
+  <text class="text" x="175" y="358" xml:space="preserve">10.10.10.5  (1 host)</text>
+  <text class="white bold" x="30" y="376" xml:space="preserve">  Ports      :</text>
+  <text class="text" x="175" y="376" xml:space="preserve">1-1000</text>
+  <text class="white bold" x="30" y="394" xml:space="preserve">  Concurrency:</text>
+  <text class="text" x="175" y="394" xml:space="preserve">500</text>
+  <text class="white bold" x="30" y="412" xml:space="preserve">  Timeout    :</text>
+  <text class="text" x="175" y="412" xml:space="preserve">1.0s</text>
+  <text class="white bold" x="30" y="430" xml:space="preserve">  Rate Limit :</text>
+  <text class="text" x="175" y="430" xml:space="preserve">Unlimited</text>
+
+  <!-- Features -->
+  <text class="cyan bold" x="30" y="460" xml:space="preserve">  ─── FEATURES ───</text>
+
+  <text class="text" x="30" y="486" xml:space="preserve">  Scripts (PBSE)    </text>
+  <text class="green bold" x="225" y="486" xml:space="preserve">ON</text>
+  <text class="text" x="30" y="504" xml:space="preserve">  CVE / Vuln Check  </text>
+  <text class="green bold" x="225" y="504" xml:space="preserve">ON</text>
+  <text class="text" x="30" y="522" xml:space="preserve">  Tool Bridge       </text>
+  <text class="red bold" x="225" y="522" xml:space="preserve">OFF</text>
+  <text class="text" x="30" y="540" xml:space="preserve">  WAF Evasion       </text>
+  <text class="red bold" x="225" y="540" xml:space="preserve">OFF</text>
+  <text class="text" x="30" y="558" xml:space="preserve">  Skip Ping         </text>
+  <text class="red bold" x="225" y="558" xml:space="preserve">OFF</text>
+</svg>

@@ -14,9 +14,37 @@
 
 **Next-generation async port scanner with built-in intelligence engine, CDN/WAF detection, and interactive command center.**
 
-[Features](#-features) · [Install](#-installation) · [Usage](#-usage) · [Architecture](#-architecture) · [Security](#-security)
+[Features](#-features) · [Install](#-installation) · [Screenshots](#-screenshots) · [Usage](#-usage) · [Architecture](#-architecture) · [Security](#-security)
 
 </div>
+
+---
+
+## Screenshots
+
+### CLI Scan with Intelligence
+
+<p align="center">
+  <img src="assets/cli-scan.svg" alt="PortBlitz CLI scan with banner grabbing and CVE detection" width="850"/>
+</p>
+
+### CDN/WAF False-Positive Detection
+
+<p align="center">
+  <img src="assets/cdn-detection.svg" alt="PortBlitz detecting Cloudflare CDN and filtering false positives" width="850"/>
+</p>
+
+### Interactive Command Center
+
+<p align="center">
+  <img src="assets/command-center.svg" alt="PortBlitz interactive TUI with session configuration" width="850"/>
+</p>
+
+### Rich Help System
+
+<p align="center">
+  <img src="assets/help-system.svg" alt="PortBlitz help command reference" width="850"/>
+</p>
 
 ---
 

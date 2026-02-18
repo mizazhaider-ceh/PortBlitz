@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="480" viewBox="0 0 850 480">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&amp;display=swap');
+      .term-bg { fill: #0d1117; }
+      .title-bar { fill: #161b22; }
+      .dot-red { fill: #ff5f56; }
+      .dot-yellow { fill: #ffbd2e; }
+      .dot-green { fill: #27c93f; }
+      .title-text { fill: #8b949e; font-family: 'JetBrains Mono', 'Cascadia Code', 'Fira Code', monospace; font-size: 12px; }
+      .text { fill: #c9d1d9; font-family: 'JetBrains Mono', 'Cascadia Code', 'Fira Code', monospace; font-size: 13px; }
+      .cyan { fill: #00ffcc; }
+      .green { fill: #3fb950; }
+      .yellow { fill: #d29922; }
+      .magenta { fill: #bc8cff; }
+      .bold { font-weight: 700; }
+      .dim { fill: #484f58; }
+      .white { fill: #f0f6fc; }
+      .blue { fill: #58a6ff; }
+      .red { fill: #ff7b72; }
+      .orange { fill: #ffa657; }
+    </style>
+  </defs>
+
+  <!-- Terminal Window -->
+  <rect class="term-bg" width="850" height="480" rx="10" ry="10"/>
+  <rect class="title-bar" width="850" height="38" rx="10" ry="10"/>
+  <rect class="term-bg" x="0" y="28" width="850" height="12"/>
+
+  <!-- Window Dots -->
+  <circle class="dot-red" cx="20" cy="19" r="6"/>
+  <circle class="dot-yellow" cx="40" cy="19" r="6"/>
+  <circle class="dot-green" cx="60" cy="19" r="6"/>
+  <text class="title-text" x="380" y="23" text-anchor="middle">portblitz.py — CDN/WAF Detection</text>
+
+  <!-- Command -->
+  <text class="dim" x="30" y="64" xml:space="preserve">$ python portblitz.py thepentrix.tech -p 1-60000</text>
+
+  <!-- Scan Info -->
+  <text class="white bold" x="30" y="96" xml:space="preserve">Targets :</text>
+  <text class="text" x="140" y="96" xml:space="preserve">1 hosts</text>
+  <text class="white bold" x="30" y="114" xml:space="preserve">Ports   :</text>
+  <text class="text" x="140" y="114" xml:space="preserve">60000 ports (Range/Top)</text>
+  <text class="dim" x="30" y="132" xml:space="preserve">────────────────────────────────────────</text>
+
+  <text class="white bold" x="30" y="158" xml:space="preserve">[*] Scanning thepentrix.tech (1/1)...</text>
+
+  <!-- CDN Warning Box -->
+  <rect x="20" y="172" width="810" height="88" rx="6" ry="6" fill="#2d1f00" stroke="#d29922" stroke-width="1" opacity="0.7"/>
+
+  <text class="yellow bold" x="40" y="196" xml:space="preserve">⚠  CDN/WAF Detected — 7/8 canary ports accepted TCP.</text>
+  <text class="yellow" x="40" y="216" xml:space="preserve">   Target is likely behind a reverse proxy (Cloudflare, Akamai, etc.).</text>
+  <text class="yellow" x="40" y="236" xml:space="preserve">   Switching to verified-open mode (banner confirmation required).</text>
+
+  <!-- Only real ports shown -->
+  <text class="green" x="30" y="282" xml:space="preserve">  [+] Port 80    OPEN  (http)</text>
+  <text class="dim" x="350" y="282" xml:space="preserve"> | Title: The PenTrix</text>
+  <text class="green" x="30" y="302" xml:space="preserve">  [+] Port 443   OPEN  (https)</text>
+  <text class="dim" x="350" y="302" xml:space="preserve"> | SSL: Yes</text>
+  <text class="green" x="30" y="322" xml:space="preserve">  [+] Port 8443  OPEN  (https)</text>
+  <text class="dim" x="350" y="322" xml:space="preserve"> | SSL: Yes</text>
+
+  <text class="green" x="30" y="352" xml:space="preserve">[+] Completed thepentrix.tech: 3 open ports</text>
+
+  <!-- Comparison note -->
+  <text class="dim" x="30" y="382" xml:space="preserve">────────────────────────────────────────</text>
+  <text class="white bold" x="30" y="402" xml:space="preserve">Mass Scan Complete!</text>
+  <text class="text" x="240" y="402" xml:space="preserve">Total Time: 4.31s</text>
+
+  <!-- Annotation -->
+  <rect x="20" y="420" width="810" height="42" rx="6" ry="6" fill="#0d2818" stroke="#3fb950" stroke-width="1" opacity="0.6"/>
+  <text class="green bold" x="40" y="446" xml:space="preserve">✓ Without CDN detection, this scan would falsely report 59,997+ "open" ports</text>
+</svg>
